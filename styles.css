@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
+
+
 /* -- Globals -- */
 * {
     margin: 0;
@@ -11,10 +13,19 @@ body {
     background-color: #222;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 700;
+    color: #ccc;
 }
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+textarea {
+    resize: none;
 }
 
 /* -- Main App -- */
@@ -27,6 +38,7 @@ a {
     margin: 10vh auto;
     background-color: #444;
     border-radius: 15px;
+    position: relative;
 }
 
 /* -- App Logo -- */
@@ -36,6 +48,16 @@ a {
     margin: 0 auto;
     background-image: url("Media/logo-bg.png");
 }
+
+#logo-text {
+    width: 100px;
+    height: 27px;
+    background-image: url("Media/logo.png");
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
 
 /* -- Login -- */
 #login {
@@ -66,4 +88,42 @@ a {
 
 .btn:active {
     background-color: #aaa;
+}
+
+/* -- New User -- */
+#login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form ul {
+    width: 60%;
+}
+
+#login-form li {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-form input {
+    border: none;
+    padding: 5px;
+    width: 150px;
+}
+
+#login-form textarea {
+    border: none;
+    padding: 5px;
+    width: 200px;
+    height: 75px;
+}
+
+#submit-newuser {
+    width: 70px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 0;
 }

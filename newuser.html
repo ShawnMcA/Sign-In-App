@@ -8,7 +8,42 @@
     </head>
     <body>
         <main id="main-app">
-
+            <form action="#" method="#" id="login-form">
+                <ul>
+                    <li>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="first_name" maxlength="20" required placeholder="ex. John">
+                    </li>
+                    <li>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="last_name" maxlength="20" required placeholder="ex. Smith">
+                    </li>
+                    <li>
+                        <label for="phnum">Phone Number:</label>
+                        <input type="tel" id="phnum" name="phone_number" minlength="10" maxlength="12" required placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{10}">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="ex. JohnSmith@Email.com">
+                    </li>
+                    <li>
+                        <label for="company">Company:</label>
+                        <input type="text" id="company" name="company" maxlength="20" required placeholder="ex. Company Name">
+                    </li>
+                    <li>
+                        <label for="visit-person">Person Here To See:</label>
+                        <input type="text" id="visit-person" name="visit_person" required placeholder="ex. Amy Wilson">
+                    </li>
+                    <li>
+                        <label for="visit-reason">Reason For Visit:</label>
+                        <textarea id="visit-reason" name="visit_Reason" required row="5'placeholder="ex. Meeting with Amy"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit" id="submit-newuser" class="btn">Submit</button>
+                    </li>
+                </ul>
+            </form>
+            <span class="logo-text"><a href="index.html" id="logo-text"></a></span>
         </main>
     </body>
 </html>
