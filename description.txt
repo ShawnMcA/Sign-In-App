@@ -1,0 +1,74 @@
+VISITOR SIGN-IN APP
+
+## APP ## 
+1. Visitor will select either 'new visitor' || 'returning visitor'
+
+    1.1 New Visitor
+
+        1.1.1 User will create a profile and enter the basic field information
+            - 'First Name'
+            - 'Last Name'
+            - 'Phone #'
+            - 'Email'
+            - 'Company'
+            - 'Purpose of Visit'
+
+        1.1.2 User will take a photo of themselves using the tablet
+
+        1.1.3 User will view the NDA and confirm acceptance of the NDA
+
+        1.1.4 User will complete the sign in
+            - This will mark the timestamp of the user's sign in
+
+    1.2 Returning Visitor
+
+        1.2.1 User will search based on last name for their profile
+            - User will select their name from the list
+            - If the user is not found, an option to create a new visitor will be available
+
+        1.2.2 User will be offered a chance to update the profile
+            - User will select a new purpose of visit
+
+        1.2.3 User will complete the sign in
+            - This will mark the timestamp of the user's sign in
+
+2. Visitors must be able to sign out
+
+    2.1 User will search based on last name for their profile
+
+        2.1.1 User will click a sign out button
+            - This will mark the timestamp of the user's departure
+
+3. Administrators should be able to manage the visitors in the system
+
+    3.1 The admins will be able to search for visitors in the database
+        - The admin can look up a visitor by last name
+
+    3.2 The admin will be able to update a user's profile
+
+    3.3 The admin will be able to manually sign out visitors
+
+    3.4 The admins should be able to update the NDA
+        - A timestamp should be kept to monitor when the NDA is updated so that it can 
+          alert visitors of an updated NDA on their next visit
+        
+
+## Notes ## 
+ -  Web app should connect to a VirtualBox linux VM running the backend
+ -  Our Backend would be linux VirtualBox VM with webserver + database and 
+    necessary editable web content
+ -  Instructions should be included for backup of visitor logs and for web-content modification
+ -  For VM, you can create a simple linux VM using Virtualbox. (virtualbox.org) - use the VM for your 
+    development effort. The deliverable would be the VirtualBox VM with all the necessary services
+    installed and configured along with the sudo use/other account information and instructions
+
+
+UI considerations
+ - Instead of 'Create account' it should be 'Register' for the button
+ - A company logo should be added to the greeting page, and a smaller logo for other pages
+ - The first box when registering should be for the name of the organization of the visitor
+ - A 'Person here to see' box should be added
+ - The purpose of visit should be a text box so user can see more than one line of what they type
+ - This system is not online so there will be no way to 'upload a photo'- thus should just be 'take a photo' 
+   button. This may even be after a visitor 'registers' there's the take photo page and then we go to the NDA
+ - There should be a 'confirm information/back' page after 'register/create account'
