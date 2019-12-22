@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
-
-
 /* -- Globals -- */
 * {
     margin: 0;
@@ -71,7 +69,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
+    width: 140px;
     height: 40px;
     margin: 0 20px;
     border: none;
@@ -98,7 +96,7 @@ textarea {
 }
 
 #login-form ul {
-    width: 60%;
+    width: 77%;
 }
 
 #login-form li {
@@ -111,14 +109,14 @@ textarea {
 #login-form input {
     border: none;
     padding: 5px;
-    width: 150px;
+    width: 200px;
 }
 
 #login-form textarea {
     border: none;
     padding: 5px;
-    width: 200px;
-    height: 75px;
+    width: 260px;
+    height: 100px;
 }
 
 #submit-newuser {
@@ -126,4 +124,5 @@ textarea {
     height: 30px;
     margin-left: auto;
     margin-right: 0;
+    user-select: none;
 }
