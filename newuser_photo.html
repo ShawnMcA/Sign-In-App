@@ -7,8 +7,19 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <main id="main-app">
+        <main id="main-photo" class="main-app">
+            <header id="photo-header-container"><h1 id="photo-header">Photo Upload</h1></header>
+            <!-- TODO: UPDATE LINKS-->
+            <form action="#" method='#' id="photo-form">
+                <!-- Label triggers input -->
+                <label for="imagecapture" id="image-upload" onclick="document.getElementById('image-capture').click()">Click to take a picture</label>
+                <!-- On upload updates label text-->
+                <input type="file" id="image-capture" accept="image/*" capture="user" onchange="photoUpload()" required>
+                <!-- Sends error message on empty file submit-->
+                <input type="submit" id="submit-photo" onclick="submitForm()" class='btn'>
+            </form>
             <span class="logo-text"><a href="index.html" id="logo-text"></a></span>
+            <script src="main.js"></script>
         </main>
     </body>
 </html>

@@ -27,7 +27,7 @@ textarea {
 }
 
 /* -- Main App -- */
-#main-app {
+.main-app {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,4 +125,51 @@ textarea {
     margin-left: auto;
     margin-right: 0;
     user-select: none;
+}
+
+/*-- New User Photo Upload --*/
+#main-photo {
+    justify-content: space-between;
+}
+
+#photo-header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#photo-header {
+    font-size: 40px;
+}
+
+#photo-form {
+    display: flex;
+    flex-flow: column;
+}
+
+#submit-photo {
+    margin: 0;
+}
+
+#photo-form > * {
+    margin: 10px auto;
+}
+
+#image-capture {
+    position: fixed; 
+    top: -100em;
+}
+
+#image-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    border: dotted white 1.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 14px;
+    overflow: hidden;
 }
