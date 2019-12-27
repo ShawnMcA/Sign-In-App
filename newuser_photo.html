@@ -12,14 +12,14 @@
             <!-- TODO: UPDATE LINKS-->
             <form action="#" method='#' id="photo-form">
                 <!-- Label triggers input -->
-                <label for="imagecapture" id="image-upload" onclick="document.getElementById('image-capture').click()">Click to take a picture</label>
+                <label for="imagecapture" id="image-upload">Click to take a picture</label>
                 <!-- On upload updates label text-->
-                <input type="file" id="image-capture" accept="image/*" capture="user" onchange="photoUpload()" required>
+                <input type="file" id="image-capture" accept="image/*" capture="user" required>
                 <!-- Sends error message on empty file submit-->
-                <input type="submit" id="submit-photo" onclick="submitForm()" class='btn'>
+                <input type="submit" id="submit-photo" class='btn'>
             </form>
             <span class="logo-text"><a href="index.html" id="logo-text"></a></span>
-            <script src="main.js"></script>
         </main>
+        <script src="photo.js"></script>
     </body>
 </html>
